@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro — Greenlab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- CSS global (variáveis, botões, nav, footer) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS específico da home para manter layout -->
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="17" stroke="#3d5a3e" stroke-width="1.5"/>
+                <path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="#3d5a3e" opacity="0.9"/>
+                <path d="M18 14C18 14 14 12 13 9" stroke="#f5f0e8" stroke-width="0.8" stroke-linecap="round"/>
+            </svg>
+            <span class="nav-logo-text">Greenlab</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#ingredientes">Ingredientes</a></li>
+            <li><a href="index.html#beneficios">Benefícios</a></li>
+            <li><a href="index.html#modo-uso">Modo de Uso</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="login.html">Entrar</a></li>
+            <li><a href="index.html#produto" class="nav-cta">Comprar</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ==================== CADASTRO ==================== -->
+    <section class="hero" style="min-height: 80vh; background: var(--creme);">
+        <div class="hero-content" style="max-width: 480px; margin: 0 auto;">
+            <div class="hero-badge">Cadastro</div>
+            <h1 style="margin-bottom: 1.2rem;">Crie sua conta</h1>
+            <p class="hero-desc" style="margin-bottom: 2.2rem;">Preencha os dados abaixo para criar sua conta e aproveitar todos os benefícios Greenlab.</p>
+            <form method="post" action="#" class="form-cadastro" style="display: flex; flex-direction: column; gap: 1.2rem;">
+                <div>
+                    <label for="nome" style="font-weight: 500;">Nome</label><br>
+                    <input type="text" name="nome" id="nome" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--creme-escuro); margin-top: 4px;">
+                </div>
+                <div>
+                    <label for="email" style="font-weight: 500;">E-mail</label><br>
+                    <input type="email" name="email" id="email" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--creme-escuro); margin-top: 4px;">
+                </div>
+                <div>
+                    <label for="senha" style="font-weight: 500;">Senha</label><br>
+                    <input type="password" name="senha" id="senha" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--creme-escuro); margin-top: 4px;">
+                </div>
+                <div>
+                    <label for="data">Data de Aniversário</label><br>
+                    <input type="date" name="data" id="data" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--creme-escuro); margin-top: 4px;">
+                </div>
+                <button type="submit" class="btn-primary" style="margin-top: 0.5rem;">Cadastrar</button>
+                            <a href="login.html" class="btn-secondary" style="margin-top: 0.5rem; display: inline-block; text-align:center; width:100%">Já tem conta? Entrar</a>
+            </form>
+            <a href="index.html" class="btn-secondary" style="margin-top: 1.5rem; display: inline-block;">Voltar para página inicial</a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-brand">
+                    <svg width="26" height="26" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="rgba(245,240,232,0.3)" stroke-width="1.2"/><path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="rgba(245,240,232,0.7)"/></svg>
+                    <span class="footer-brand-text">Greenlab</span>
+                </div>
+                <p class="footer-tagline">Farmácia magistral com alma verde.<br>Cosméticos manipulados com ingredientes<br>naturais selecionados para você.</p>
+            </div>
+            <div>
+                <p class="footer-col-title">Produto</p>
+                <ul class="footer-links">
+                    <li><a href="index.html#ingredientes">Ingredientes</a></li>
+                    <li><a href="index.html#beneficios">Benefícios</a></li>
+                    <li><a href="index.html#modo-uso">Modo de Uso</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-col-title">Acesso</p>
+                <ul class="footer-links">
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Criar conta</a></li>
+                    <li><a href="https://wa.me/5516900000000">WhatsApp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Greenlab Farmácia Magistral. Todos os direitos reservados.</span>
+            <span><a href="#">Privacidade</a> · <a href="#">Termos</a></span>
+        </div>
+    </footer>
+</body>
+</html>

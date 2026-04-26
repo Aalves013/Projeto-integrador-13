@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenlab — Máscara Facial de Argila com Alecrim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- CSS global (variáveis, botões, nav, footer) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- CSS específico desta página -->
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="17" stroke="#3d5a3e" stroke-width="1.5"/>
+        <path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="#3d5a3e" opacity="0.9"/>
+        <path d="M18 14C18 14 14 12 13 9" stroke="#f5f0e8" stroke-width="0.8" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-logo-text">Greenlab</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#ingredientes">Ingredientes</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#modo-uso">Modo de Uso</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="login.html">Entrar</a></li>
+      <li><a href="#produto" class="nav-cta">Comprar</a></li>
+    </ul>
+
+    <button class="nav-hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge animate-fadein">Novo Produto</div>
+
+      <h1 class="animate-fadein-d1">
+        Máscara Facial<br>
+        de <em>Argila</em><br>
+        com Alecrim
+      </h1>
+
+      <p class="hero-desc animate-fadein-d2">
+        Pureza da natureza em cada aplicação. Argila verde e alecrim orgânico
+        unidos para transformar sua pele com o que ela realmente precisa.
+      </p>
+
+      <div class="hero-actions animate-fadein-d3">
+        <a href="#produto" class="btn-primary">Conheça o produto</a>
+        <a href="#modo-uso" class="btn-ghost">Ver modo de uso</a>
+      </div>
+
+      <div class="hero-stats animate-fadein-d4">
+        <div>
+          <div class="hero-stat-number">100%</div>
+          <div class="hero-stat-label">Natural</div>
+        </div>
+        <div>
+          <div class="hero-stat-number">2</div>
+          <div class="hero-stat-label">Ingredientes-chave</div>
+        </div>
+        <div>
+          <div class="hero-stat-number">5min</div>
+          <div class="hero-stat-label">Aplicação</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <svg class="hero-leaf hero-leaf-1" viewBox="0 0 80 100" fill="none">
+        <path d="M40 95C40 95 5 70 5 35C5 10 20 3 35 5C38 5.5 39.5 7 40 8.5C40.5 7 42 5.5 45 5C60 3 75 10 75 35C75 70 40 95 40 95Z" fill="#3d5a3e"/>
+        <path d="M40 15C40 15 30 30 28 50" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <svg class="hero-leaf hero-leaf-2" viewBox="0 0 80 100" fill="none">
+        <path d="M40 95C40 95 5 70 5 35C5 10 20 3 35 5C38 5.5 39.5 7 40 8.5C40.5 7 42 5.5 45 5C60 3 75 10 75 35C75 70 40 95 40 95Z" fill="#3d5a3e"/>
+        <path d="M40 15C40 15 30 30 28 50" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <div class="hero-product-wrap">
+        <div class="hero-product-bg"></div>
+        <!-- Ilustração do pote -->
+        <svg class="product-jar float-anim" viewBox="0 0 260 300" fill="none">
+          <defs>
+            <linearGradient id="jg" x1="30" y1="82" x2="230" y2="272" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#f5f0e8"/>
+              <stop offset="100%" stop-color="#ded4c2"/>
+            </linearGradient>
+          </defs>
+          <rect x="45" y="30" width="170" height="55" rx="10" fill="#3d5a3e"/>
+          <rect x="45" y="30" width="170" height="28" rx="10" fill="#2a3d2a"/>
+          <rect x="100" y="40" width="60" height="8" rx="4" fill="rgba(245,240,232,0.2)"/>
+          <text x="130" y="68" font-family="Georgia,serif" font-size="13" fill="#f5f0e8" text-anchor="middle" font-style="italic">Greenlab</text>
+          <rect x="30" y="82" width="200" height="190" rx="14" fill="url(#jg)"/>
+          <rect x="55" y="110" width="150" height="135" rx="8" fill="#f5f0e8" opacity="0.9"/>
+          <rect x="55" y="110" width="150" height="6" rx="3" fill="#3d5a3e"/>
+          <path d="M130 142C130 142 117 134 117 125C117 120 121 118 124.5 118.5C126 118.7 127 119.5 130 121.5C133 119.5 134 118.7 135.5 118.5C139 118 143 120 143 125C143 134 130 142 130 142Z" fill="#3d5a3e"/>
+          <text x="130" y="158" font-family="Georgia,serif" font-size="9" fill="#3d5a3e" text-anchor="middle" font-weight="bold" letter-spacing="1">GREENLAB</text>
+          <text x="130" y="173" font-family="Georgia,serif" font-size="13" fill="#2a3d2a" text-anchor="middle" font-style="italic">Máscara Facial</text>
+          <text x="130" y="189" font-family="Georgia,serif" font-size="11" fill="#5a7d5a" text-anchor="middle">Argila &amp; Alecrim</text>
+          <line x1="75" y1="198" x2="185" y2="198" stroke="#3d5a3e" stroke-width="0.5" opacity="0.3"/>
+          <text x="130" y="214" font-family="sans-serif" font-size="7.5" fill="#8a9a80" text-anchor="middle">Argila Verde + Alecrim Orgânico</text>
+          <text x="130" y="228" font-family="sans-serif" font-size="7" fill="#8a9a80" text-anchor="middle">100% Natural · 60g</text>
+          <rect x="55" y="239" width="150" height="5" rx="2.5" fill="#3d5a3e"/>
+          <rect x="42" y="95" width="12" height="160" rx="6" fill="rgba(255,255,255,0.25)"/>
+        </svg>
+      </div>
+
+      <div class="floating-tag floating-tag-1">
+        <div class="tag-label">Tipo de pele</div>
+        <div class="tag-value">Todas</div>
+      </div>
+      <div class="floating-tag floating-tag-2">
+        <div class="tag-label">Tempo de ação</div>
+        <div class="tag-value">10–15 min</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SELOS ==================== -->
+  <div class="selos">
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 4 7 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 7 12 2 12 2Z" stroke="#3d5a3e" stroke-width="1.5" fill="none"/><path d="M12 8C12 8 9 11 9 14" stroke="#3d5a3e" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+      <span class="selo-label">100% Natural</span>
+    </div>
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#3d5a3e" stroke-width="1.5"/><path d="M9 12L11 14L15 10" stroke="#3d5a3e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="selo-label">Vegano</span>
+    </div>
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3L15.5 8.5L22 9.5L17 14.5L18.5 21L12 17.5L5.5 21L7 14.5L2 9.5L8.5 8.5Z" stroke="#3d5a3e" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="selo-label">Derm. Testado</span>
+    </div>
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22C12 22 3 16 3 10C3 7 5.5 5 8 5C9.5 5 11 5.8 12 7C13 5.8 14.5 5 16 5C18.5 5 21 7 21 10C21 16 12 22 12 22Z" stroke="#3d5a3e" stroke-width="1.5" fill="none"/></svg>
+      </div>
+      <span class="selo-label">Sem Crueldade</span>
+    </div>
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3H15V8L17 10V21H7V10L9 8V3Z" stroke="#3d5a3e" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M9 3C9 3 12 5 15 3" stroke="#3d5a3e" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+      <span class="selo-label">Manipulado</span>
+    </div>
+    <div class="selo">
+      <div class="selo-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="#3d5a3e" stroke-width="1.5" fill="none"/><path d="M8 12H16M12 8V16" stroke="#3d5a3e" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <span class="selo-label">Sem Parabenos</span>
+    </div>
+  </div>
+
+  <!-- ==================== INGREDIENTES ==================== -->
+  <section class="ingredientes" id="ingredientes">
+    <div class="section-header">
+      <span class="overline">A fórmula</span>
+      <h2>Ingredientes que<br>fazem a diferença</h2>
+      <p>Selecionamos apenas o que a natureza tem de melhor. Cada ingrediente tem um propósito claro e comprovado para a saúde da sua pele.</p>
+    </div>
+
+    <div class="ingredientes-grid">
+      <div class="ingrediente-card">
+        <svg class="ing-icon" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" stroke="#c8b99a" stroke-width="1.5"/>
+          <path d="M24 38C24 38 12 30 12 21C12 15 17 12 21 12.5C22.5 12.7 23.5 13.5 24 14.5C24.5 13.5 25.5 12.7 27 12.5C31 12 36 15 36 21C36 30 24 38 24 38Z" fill="#c8b99a" opacity="0.5"/>
+          <path d="M24 38C24 38 12 30 12 21C12 15 17 12 21 12.5C22.5 12.7 23.5 13.5 24 14.5C24.5 13.5 25.5 12.7 27 12.5C31 12 36 15 36 21C36 30 24 38 24 38Z" stroke="#c8b99a" stroke-width="1.2" fill="none"/>
+          <path d="M24 18C24 18 20 22 19 27" stroke="#c8b99a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+        </svg>
+        <h3 class="ing-nome">Argila Verde</h3>
+        <p class="ing-origem">Terra · Minerais · Adsorvente</p>
+        <p class="ing-desc">Rica em sílica, magnésio e potássio, a argila verde tem propriedades adsorventes únicas que capturam impurezas, excesso de sebo e toxinas, deixando os poros visivelmente mais finos.</p>
+      </div>
+
+      <div class="ingrediente-card">
+        <svg class="ing-icon" viewBox="0 0 48 48" fill="none">
+          <path d="M24 42C24 42 10 32 8 20C6 10 14 4 20 6C22 6.5 23 8 24 10C25 8 26 6.5 28 6C34 4 42 10 40 20C38 32 24 42 24 42Z" fill="#5a7d5a" opacity="0.2"/>
+          <path d="M24 42C24 42 10 32 8 20C6 10 14 4 20 6C22 6.5 23 8 24 10C25 8 26 6.5 28 6C34 4 42 10 40 20C38 32 24 42 24 42Z" stroke="#3d5a3e" stroke-width="1.5" fill="none"/>
+          <path d="M24 12C24 12 18 18 17 26" stroke="#3d5a3e" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <h3 class="ing-nome">Alecrim Orgânico</h3>
+        <p class="ing-origem">Planta · Antioxidante · Estimulante</p>
+        <p class="ing-desc">Extrato de Rosmarinus officinalis, um potente antioxidante que combate radicais livres, estimula a microcirculação e possui propriedades antimicrobianas naturais.</p>
+      </div>
+
+      <div class="ingrediente-card">
+        <svg class="ing-icon" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="14" stroke="#5a7d5a" stroke-width="1.5" fill="none"/>
+          <circle cx="24" cy="24" r="5" fill="#3d5a3e" opacity="0.3"/>
+          <circle cx="24" cy="24" r="2" fill="#3d5a3e"/>
+        </svg>
+        <h3 class="ing-nome">Óleo de Jojoba</h3>
+        <p class="ing-origem">Semente · Emoliente · Equilibrante</p>
+        <p class="ing-desc">Similar ao sebo natural da pele, o óleo de jojoba equilibra a produção de oleosidade sem obstruir poros, promovendo suavidade e hidratação leve.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFÍCIOS ==================== -->
+  <section class="beneficios" id="beneficios">
+    <div class="section-header">
+      <span class="overline">Para sua pele</span>
+      <h2>O que esta máscara<br>faz por você</h2>
+      <p>Cada aplicação é um ritual completo de limpeza, tratamento e revitalização.</p>
+    </div>
+
+    <div class="beneficios-grid">
+      <div class="beneficio-item">
+        <div class="ben-num">01</div>
+        <h3 class="ben-titulo">Limpeza Profunda</h3>
+        <p class="ben-desc">Remove impurezas, células mortas e excesso de sebo acumulados nos poros com uma limpeza que vai além da superfície.</p>
+      </div>
+      <div class="beneficio-item">
+        <div class="ben-num">02</div>
+        <h3 class="ben-titulo">Controle da Oleosidade</h3>
+        <p class="ben-desc">A argila adsorve o excesso de sebo enquanto o óleo de jojoba equilibra a produção natural, sem ressecar a pele.</p>
+      </div>
+      <div class="beneficio-item">
+        <div class="ben-num">03</div>
+        <h3 class="ben-titulo">Ação Antioxidante</h3>
+        <p class="ben-desc">O alecrim orgânico neutraliza radicais livres causados por poluição e estresse oxidativo, protegendo e retardando o envelhecimento.</p>
+      </div>
+      <div class="beneficio-item">
+        <div class="ben-num">04</div>
+        <h3 class="ben-titulo">Poros Refinados</h3>
+        <p class="ben-desc">Com uso regular, os poros ficam visivelmente menores e a textura da pele mais uniforme, macia e com aparência saudável.</p>
+      </div>
+      <div class="beneficio-item">
+        <div class="ben-num">05</div>
+        <h3 class="ben-titulo">Efeito Calmante</h3>
+        <p class="ben-desc">Compostos naturais do alecrim têm propriedades anti-inflamatórias que reduzem vermelhidão e acalmam peles sensíveis.</p>
+      </div>
+      <div class="beneficio-item">
+        <div class="ben-num">06</div>
+        <h3 class="ben-titulo">Luminosidade Natural</h3>
+        <p class="ben-desc">Após a remoção, a pele revela um brilho natural saudável, sem o aspecto plástico de cosméticos convencionais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MODO DE USO ==================== -->
+  <section class="modo-uso" id="modo-uso">
+    <div class="modo-uso-inner">
+      <div class="modo-uso-visual" style="position:relative">
+        <div class="uso-img-wrap">
+          <div class="uso-placeholder">
+            <svg width="64" height="64" viewBox="0 0 72 72" fill="none" style="opacity:0.25">
+              <path d="M36 64C36 64 14 50 14 32C14 20 23 14 30 15C32.5 15.4 34.5 16.8 36 18.5C37.5 16.8 39.5 15.4 42 15C49 14 58 20 58 32C58 50 36 64 36 64Z" stroke="#3d5a3e" stroke-width="1.5" fill="none"/>
+              <path d="M36 22C36 22 28 30 27 40" stroke="#3d5a3e" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <p class="uso-placeholder-text">Adicione a foto<br>do produto aqui</p>
+          </div>
+        </div>
+        <div class="uso-badge-float">
+          <div class="uso-badge-num">2×</div>
+          <div class="uso-badge-text">por semana</div>
+        </div>
+      </div>
+
+      <div class="modo-uso-content">
+        <span class="overline">Ritual de aplicação</span>
+        <h2>Como usar sua<br>máscara Greenlab</h2>
+        <p style="color:var(--texto-suave);font-size:0.9rem;margin-bottom:0.5rem">
+          Para melhores resultados, aplique 2 vezes por semana como parte da sua rotina noturna de skincare.
+        </p>
+        <div class="passos">
+          <div class="passo">
+            <div class="passo-num">1</div>
+            <div><p class="passo-titulo">Limpe o rosto</p><p class="passo-desc">Inicie com o rosto limpo e levemente úmido. Use seu gel de limpeza favorito e enxágue com água morna.</p></div>
+          </div>
+          <div class="passo">
+            <div class="passo-num">2</div>
+            <div><p class="passo-titulo">Aplique a máscara</p><p class="passo-desc">Com a espátula, aplique uma camada uniforme evitando os olhos e lábios.</p></div>
+          </div>
+          <div class="passo">
+            <div class="passo-num">3</div>
+            <div><p class="passo-titulo">Aguarde 10 a 15 minutos</p><p class="passo-desc">Retire enquanto ainda estiver levemente úmida para evitar ressecamento.</p></div>
+          </div>
+          <div class="passo">
+            <div class="passo-num">4</div>
+            <div><p class="passo-titulo">Remova com água morna</p><p class="passo-desc">Enxágue com movimentos circulares suaves. Seque com leve batida de toalha limpa.</p></div>
+          </div>
+          <div class="passo">
+            <div class="passo-num">5</div>
+            <div><p class="passo-titulo">Hidrate em seguida</p><p class="passo-desc">Finalize com seu hidratante habitual — a pele estará muito receptiva neste momento.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUTO / CTA ==================== -->
+  <section class="produto-cta" id="produto">
+    <div class="produto-inner">
+      <div class="produto-img-area">
+        <svg class="produto-img-leaf produto-img-leaf-1" viewBox="0 0 70 90" fill="none"><path d="M35 85C35 85 5 65 5 35C5 12 18 5 28 6C30.5 6.3 32.5 7.5 35 9.5C37.5 7.5 39.5 6.3 42 6C52 5 65 12 65 35C65 65 35 85 35 85Z" fill="#3d5a3e"/></svg>
+        <svg class="produto-img-leaf produto-img-leaf-2" viewBox="0 0 60 80" fill="none"><path d="M30 74C30 74 4 56 4 30C4 10 15 4 24 5C26 5.3 28 6.5 30 8.5C32 6.5 34 5.3 36 5C45 4 56 10 56 30C56 56 30 74 30 74Z" fill="#3d5a3e"/></svg>
+        <svg class="produto-jar-big" viewBox="0 0 260 300" fill="none">
+          <defs>
+            <linearGradient id="jg2" x1="30" y1="82" x2="230" y2="272" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#f5f0e8"/><stop offset="100%" stop-color="#ded4c2"/>
+            </linearGradient>
+          </defs>
+          <rect x="45" y="30" width="170" height="55" rx="10" fill="#3d5a3e"/>
+          <rect x="45" y="30" width="170" height="28" rx="10" fill="#2a3d2a"/>
+          <text x="130" y="68" font-family="Georgia,serif" font-size="13" fill="#f5f0e8" text-anchor="middle" font-style="italic">Greenlab</text>
+          <rect x="30" y="82" width="200" height="190" rx="14" fill="url(#jg2)"/>
+          <rect x="55" y="110" width="150" height="135" rx="8" fill="#f5f0e8" opacity="0.9"/>
+          <rect x="55" y="110" width="150" height="6" rx="3" fill="#3d5a3e"/>
+          <path d="M130 142C130 142 117 134 117 125C117 120 121 118 124.5 118.5C126 118.7 127 119.5 130 121.5C133 119.5 134 118.7 135.5 118.5C139 118 143 120 143 125C143 134 130 142 130 142Z" fill="#3d5a3e"/>
+          <text x="130" y="158" font-family="Georgia,serif" font-size="9" fill="#3d5a3e" text-anchor="middle" font-weight="bold" letter-spacing="1">GREENLAB</text>
+          <text x="130" y="173" font-family="Georgia,serif" font-size="13" fill="#2a3d2a" text-anchor="middle" font-style="italic">Máscara Facial</text>
+          <text x="130" y="189" font-family="Georgia,serif" font-size="11" fill="#5a7d5a" text-anchor="middle">Argila &amp; Alecrim</text>
+          <line x1="75" y1="198" x2="185" y2="198" stroke="#3d5a3e" stroke-width="0.5" opacity="0.3"/>
+          <text x="130" y="214" font-family="sans-serif" font-size="7.5" fill="#8a9a80" text-anchor="middle">Argila Verde + Alecrim Orgânico</text>
+          <text x="130" y="228" font-family="sans-serif" font-size="7" fill="#8a9a80" text-anchor="middle">100% Natural · 60g</text>
+          <rect x="55" y="239" width="150" height="5" rx="2.5" fill="#3d5a3e"/>
+          <rect x="42" y="95" width="12" height="160" rx="6" fill="rgba(255,255,255,0.25)"/>
+        </svg>
+      </div>
+
+      <div class="produto-info">
+        <span class="overline">Greenlab Farmácia</span>
+        <h2>Máscara Facial<br>Argila &amp; Alecrim</h2>
+        <p class="produto-subtitulo">Pureza que transforma</p>
+        <p class="produto-desc">Nossa máscara é formulada sob encomenda em nossa farmácia magistral. Cada lote é preparado com ingredientes selecionados, sem conservantes desnecessários.</p>
+        <div class="produto-tags">
+          <span class="produto-tag">Vegano</span>
+          <span class="produto-tag">Sem Parabenos</span>
+          <span class="produto-tag">Sem Sulfatos</span>
+          <span class="produto-tag">Derm. Testado</span>
+          <span class="produto-tag">Manipulado</span>
+        </div>
+        <div class="produto-preco">
+          <span class="preco-label">A partir de</span>
+          <span class="preco-valor">R$ 89,90</span>
+          <span class="preco-ml">/ 60g</span>
+        </div>
+        <div class="produto-acoes">
+          <a href="https://wa.me/5516900000000" class="btn-primary">Solicitar via WhatsApp</a>
+          <a href="cadastro.html" class="btn-secondary">Criar conta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <span class="overline">Dúvidas frequentes</span>
+      <h2>Perguntas e respostas</h2>
+      <p>Tudo que você precisa saber antes de começar seu ritual Greenlab.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">É indicada para pele oleosa?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Sim! A argila verde é especialmente eficaz para peles oleosas e mistas. O óleo de jojoba complementa esse equilíbrio sinalizando à pele que ela não precisa produzir mais oleosidade.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Pode ser usada em pele seca ou sensível?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Pode, com cuidado. Para peles secas, retire antes de secar completamente (em torno de 8 minutos). Para peles sensíveis, comece com 1 aplicação por semana. Consulte nosso farmacêutico para ajustes na fórmula.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Com que frequência devo usar?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Para peles oleosas ou mistas, 2 a 3 vezes por semana é o ideal. Para peles normais e secas, 1 vez por semana já traz excelentes resultados.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Tem prazo de validade?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Por ser um produto manipulado com ingredientes naturais, o prazo de validade é de 6 meses a partir da data de manipulação. Mantenha em local fresco e seco, longe da luz solar.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Como solicitar o produto?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Nossa máscara é manipulada sob encomenda. Solicite via WhatsApp, telefone ou presencialmente. O prazo de entrega após confirmação é de 2 a 3 dias úteis.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="rgba(245,240,232,0.3)" stroke-width="1.2"/><path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="rgba(245,240,232,0.7)"/></svg>
+          <span class="footer-brand-text">Greenlab</span>
+        </div>
+        <p class="footer-tagline">Farmácia magistral com alma verde.<br>Cosméticos manipulados com ingredientes<br>naturais selecionados para você.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Produto</p>
+        <ul class="footer-links">
+          <li><a href="#ingredientes">Ingredientes</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#modo-uso">Modo de Uso</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Acesso</p>
+        <ul class="footer-links">
+          <li><a href="login.html">Entrar</a></li>
+          <li><a href="cadastro.html">Criar conta</a></li>
+          <li><a href="https://wa.me/5513996491276">WhatsApp</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Greenlab Farmácia Magistral. Todos os direitos reservados.</span>
+      <span><a href="#">Privacidade</a> · <a href="#">Termos</a></span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.ingrediente-card, .beneficio-item, .passo, .selo').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+  <script>
+    // Menu mobile toggle
+    const navHamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (navHamburger && navLinks) {
+      navHamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        navHamburger.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
