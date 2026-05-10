@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar — Greenlab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="17" stroke="#3d5a3e" stroke-width="1.5"/>
+        <path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="#3d5a3e" opacity="0.9"/>
+        <path d="M18 14C18 14 14 12 13 9" stroke="#f5f0e8" stroke-width="0.8" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-logo-text">Greenlab</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#produto">Produto</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="login.html">Entrar</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="auth-page compra-page">
+    <section class="auth-visual">
+      <div class="auth-visual-logo">
+        <svg width="26" height="26" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="17" stroke="#f5f0e8" stroke-width="1.5"/>
+          <path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="#f5f0e8" opacity="0.9"/>
+          <path d="M18 14C18 14 14 12 13 9" stroke="#faf8f4" stroke-width="0.8" stroke-linecap="round"/>
+        </svg>
+        <span class="auth-visual-logo-text">Greenlab</span>
+      </div>
+      <h1 class="auth-visual-title">Confirme sua compra<br><em>com segurança e rapidez</em></h1>
+      <p class="auth-visual-desc">Escolha a forma de pagamento e finalize o pedido. Após a confirmação, você será redirecionado ao WhatsApp para receber a confirmação e o código do pedido.</p>
+      <div class="auth-visual-pills">
+        <span class="auth-visual-pill">Entrega rápida</span>
+        <span class="auth-visual-pill">Pagamento seguro</span>
+        <span class="auth-visual-pill">Suporte via WhatsApp</span>
+      </div>
+    </section>
+
+    <section class="auth-form-panel">
+      <div class="auth-form-header">
+        <span class="overline"></span>
+        <h2>Finalize seu pedido</h2>
+        <p>Confira os dados, escolha seu método de pagamento e confirme para ser redirecionado ao WhatsApp.</p>
+      </div>
+
+      <form id="purchase-form" class="auth-form">
+        <div class="purchase-card">
+          <div class="purchase-card-header">
+            <span class="overline">Produto</span>
+            <h3>Creme Facial Argila &amp; Alecrim e óleo essencial de laranja amarga</h3>
+          </div>
+          <p class="purchase-desc">Fórmula natural, vegana e dermocosmética. Ideal para todos os tipos de pele.</p>
+          <div class="purchase-details-grid">
+            <div>
+              <span class="detail-label">Preço unitário</span>
+              <strong>R$ 89,90</strong>
+            </div>
+            <div>
+              <label class="form-label" for="quantity">Quantidade</label>
+              <input id="quantity" name="quantity" type="number" min="1" value="1" class="form-input" />
+            </div>
+          </div>
+          <div class="purchase-total">
+            <span>Total estimado</span>
+            <strong id="total-price">R$ 89,90</strong>
+          </div>
+        </div>
+
+        <div class="form-group payment-group">
+          <p class="form-label">Método de pagamento</p>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Pix" checked />
+            <span>Pix</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Cartão de crédito" />
+            <span>Cartão de crédito</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Cartão de débito" />
+            <span>Cartão de débito</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Transferência bancária" />
+            <span>Transferência bancária</span>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="customer-name">Nome completo</label>
+          <input id="customer-name" name="customerName" type="text" class="form-input" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="customer-phone">Telefone</label>
+          <input id="customer-phone" name="customerPhone" type="tel" class="form-input" placeholder="(99) 99999-9999" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="customer-email">E-mail</label>
+          <input id="customer-email" name="customerEmail" type="email" class="form-input" placeholder="seu@email.com" required />
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">Efetuar pagamento</button>
+        <p class="purchase-note">Ao clicar em efetuar pagamento, você será redirecionado ao WhatsApp para confirmar sua compra.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="17" stroke="rgba(245,240,232,0.3)" stroke-width="1.2"/><path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="rgba(245,240,232,0.7)"/></svg>
+          <span class="footer-brand-text">Greenlab</span>
+        </div>
+        <p class="footer-tagline">Farmácia magistral com alma verde.<br>Cosméticos manipulados com ingredientes<br>naturais selecionados para você.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Produto</p>
+        <ul class="footer-links">
+          <li><a href="index.html#ingredientes">Ingredientes</a></li>
+          <li><a href="index.html#beneficios">Benefícios</a></li>
+          <li><a href="index.html#modo-uso">Modo de Uso</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Acesso</p>
+        <ul class="footer-links">
+          <li><a href="login.html">Entrar</a></li>
+          <li><a href="cadastro.html">Criar conta</a></li>
+          <li><a href="https://wa.me/5513996491276">WhatsApp</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Greenlab Farmácia Magistral. Todos os direitos reservados.</span>
+      <span><a href="#">Privacidade</a> · <a href="#">Termos</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const purchaseForm = document.getElementById('purchase-form');
+    const quantityInput = document.getElementById('quantity');
+    const totalPrice = document.getElementById('total-price');
+    const unitPrice = 89.90;
+
+    function formatPrice(value) {
+      return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+
+    function updateTotal() {
+      const quantity = Math.max(1, Number(quantityInput.value) || 1);
+      quantityInput.value = quantity;
+      totalPrice.textContent = formatPrice(quantity * unitPrice);
+    }
+
+    quantityInput.addEventListener('change', updateTotal);
+    quantityInput.addEventListener('input', updateTotal);
+
+    purchaseForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(purchaseForm);
+      const quantity = Math.max(1, Number(formData.get('quantity') || 1));
+      const paymentMethod = formData.get('paymentMethod');
+      const customerName = formData.get('customerName').trim();
+      const customerPhone = formData.get('customerPhone').trim();
+      const customerEmail = formData.get('customerEmail').trim();
+      const total = formatPrice(quantity * unitPrice);
+
+      const message = `Olá Greenlab, gostaria de confirmar minha compra de ${quantity}x Creme Facial Argila & Alecrim óleo essencial de laranja amarga.\n\nNome: ${customerName}\nTelefone: ${customerPhone}\nE-mail: ${customerEmail}\nMétodo de pagamento: ${paymentMethod}\nTotal: ${total}`;
+      const phone = '5513996491276';
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+      window.location.href = whatsappUrl;
+    });
+
+    const navHamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (navHamburger && navLinks) {
+      navHamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+        navHamburger.classList.toggle('active');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          navHamburger.classList.remove('active');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
