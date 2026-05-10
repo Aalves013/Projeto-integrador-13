@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,9 +7,10 @@
   <title>Comprar — Greenlab</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
+ 
   <nav>
     <a href="index.html" class="nav-logo">
       <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -28,95 +30,167 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
-
-  <main class="auth-page compra-page">
-    <section class="auth-visual">
-      <div class="auth-visual-logo">
-        <svg width="26" height="26" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="17" stroke="#f5f0e8" stroke-width="1.5"/>
-          <path d="M18 28C18 28 8 20 8 13C8 9.5 11 7 14.5 7.5C16 7.7 17 8.5 18 9.5C19 8.5 20 7.7 21.5 7.5C25 7 28 9.5 28 13C28 20 18 28 18 28Z" fill="#f5f0e8" opacity="0.9"/>
-          <path d="M18 14C18 14 14 12 13 9" stroke="#faf8f4" stroke-width="0.8" stroke-linecap="round"/>
-        </svg>
-        <span class="auth-visual-logo-text">Greenlab</span>
+ 
+  <main class="compra-page">
+ 
+    <!-- PAINEL ESQUERDO -->
+    <section class="compra-visual">
+      <span class="visual-overline">Greenlab Farmácia Magistral</span>
+      <h1 class="visual-title">Finalize seu<br>pedido com<br><em>tranquilidade</em></h1>
+      <p class="visual-desc">Após a confirmação, você será redirecionado ao WhatsApp para receber os detalhes e o código do pedido.</p>
+ 
+      <div class="produto-resumo">
+        <div class="produto-resumo-header">
+          <div class="produto-resumo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 22C12 22 3 16 3 10C3 7 5.5 5 8 5C9.5 5 11 5.8 12 7C13 5.8 14.5 5 16 5C18.5 5 21 7 21 10C21 16 12 22 12 22Z" stroke="#f5f0e8" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <div>
+            <div class="produto-resumo-nome">Creme Facial<br>Argila &amp; Alecrim</div>
+            <div class="produto-resumo-sub">Óleo essencial de laranja amarga · 100g</div>
+          </div>
+        </div>
+        <hr class="produto-resumo-divider" />
+        <div class="produto-resumo-tags">
+          <span class="produto-resumo-tag">100% Natural</span>
+          <span class="produto-resumo-tag">Vegano</span>
+          <span class="produto-resumo-tag">Sem Parabenos</span>
+          <span class="produto-resumo-tag">Manipulado</span>
+          <span class="produto-resumo-tag">Derm. Testado</span>
+        </div>
       </div>
-      <h1 class="auth-visual-title">Confirme sua compra<br><em>com segurança e rapidez</em></h1>
-      <p class="auth-visual-desc">Escolha a forma de pagamento e finalize o pedido. Após a confirmação, você será redirecionado ao WhatsApp para receber a confirmação e o código do pedido.</p>
-      <div class="auth-visual-pills">
-        <span class="auth-visual-pill">Entrega rápida</span>
-        <span class="auth-visual-pill">Pagamento seguro</span>
-        <span class="auth-visual-pill">Suporte via WhatsApp</span>
+ 
+      <div class="garantias">
+        <div class="garantia-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#f5f0e8" stroke-width="1.5"/></svg>
+          Entrega em 2 a 3 dias úteis
+        </div>
+        <div class="garantia-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#f5f0e8" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Pagamento 100% seguro
+        </div>
+        <div class="garantia-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#f5f0e8" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Suporte via WhatsApp
+        </div>
       </div>
     </section>
-
-    <section class="auth-form-panel">
-      <div class="auth-form-header">
-        <span class="overline"></span>
-        <h2>Finalize seu pedido</h2>
-        <p>Confira os dados, escolha seu método de pagamento e confirme para ser redirecionado ao WhatsApp.</p>
+ 
+    <!-- PAINEL DIREITO — FORMULÁRIO -->
+    <section class="compra-form-panel">
+ 
+      <div class="form-panel-header">
+        <span class="overline">Checkout</span>
+        <h2>Confirme seu pedido</h2>
+        <p>Preencha os dados abaixo e escolha a forma de pagamento.</p>
       </div>
-
-      <form id="purchase-form" class="auth-form">
-        <div class="purchase-card">
-          <div class="purchase-card-header">
-            <span class="overline">Produto</span>
-            <h3>Creme Facial Argila &amp; Alecrim e óleo essencial de laranja amarga</h3>
-          </div>
-          <p class="purchase-desc">Fórmula natural, vegana e dermocosmética. Ideal para todos os tipos de pele.</p>
-          <div class="purchase-details-grid">
-            <div>
-              <span class="detail-label">Preço unitário</span>
-              <strong>R$ 89,90</strong>
+ 
+      <div class="steps-bar">
+        <div class="step-item done">
+          <div class="step-num">✓</div>
+          <span>Produto</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-item active">
+          <div class="step-num">2</div>
+          <span>Pagamento</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <span>Confirmação</span>
+        </div>
+      </div>
+ 
+      <form id="purchase-form">
+ 
+        <!-- Quantidade e total -->
+        <div class="quantidade-preco">
+          <div class="qty-box">
+            <label>Quantidade</label>
+            <div class="qty-controls">
+              <button type="button" class="qty-btn" id="qty-minus">−</button>
+              <span class="qty-value" id="qty-display">1</span>
+              <button type="button" class="qty-btn" id="qty-plus">+</button>
+              <input type="hidden" id="quantity" name="quantity" value="1" />
             </div>
-            <div>
-              <label class="form-label" for="quantity">Quantidade</label>
-              <input id="quantity" name="quantity" type="number" min="1" value="1" class="form-input" />
+          </div>
+          <div class="total-box">
+            <div class="total-label">Total estimado</div>
+            <div class="total-valor" id="total-price">R$ 89,90</div>
+            <div class="total-por">R$ 89,90 por unidade</div>
+          </div>
+        </div>
+ 
+        <!-- Pagamento -->
+        <div class="payment-section">
+          <p class="payment-label-title">Método de pagamento</p>
+          <div class="payment-grid">
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="Pix" checked />
+              <div class="payment-card">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.5"/></svg>
+                Pix
+              </div>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="Cartão de crédito" />
+              <div class="payment-card">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="15" r="1.5" fill="currentColor"/></svg>
+                Crédito
+              </div>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="Cartão de débito" />
+              <div class="payment-card">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.5"/></svg>
+                Débito
+              </div>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="Transferência bancária" />
+              <div class="payment-card">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="1.5"/></svg>
+                Transferência
+              </div>
+            </label>
+          </div>
+        </div>
+ 
+        <!-- Dados pessoais -->
+        <div class="form-fields">
+          <div class="form-group">
+            <label for="customer-name">Nome completo</label>
+            <input id="customer-name" name="customerName" type="text" class="form-input" placeholder="Seu nome completo" required />
+          </div>
+          <div class="field-row">
+            <div class="form-group">
+              <label for="customer-phone">Telefone</label>
+              <input id="customer-phone" name="customerPhone" type="tel" class="form-input" placeholder="(99) 99999-9999" required />
+            </div>
+            <div class="form-group">
+              <label for="customer-email">E-mail</label>
+              <input id="customer-email" name="customerEmail" type="email" class="form-input" placeholder="seu@email.com" required />
             </div>
           </div>
-          <div class="purchase-total">
-            <span>Total estimado</span>
-            <strong id="total-price">R$ 89,90</strong>
-          </div>
         </div>
-
-        <div class="form-group payment-group">
-          <p class="form-label">Método de pagamento</p>
-          <label class="payment-option">
-            <input type="radio" name="paymentMethod" value="Pix" checked />
-            <span>Pix</span>
-          </label>
-          <label class="payment-option">
-            <input type="radio" name="paymentMethod" value="Cartão de crédito" />
-            <span>Cartão de crédito</span>
-          </label>
-          <label class="payment-option">
-            <input type="radio" name="paymentMethod" value="Cartão de débito" />
-            <span>Cartão de débito</span>
-          </label>
-          <label class="payment-option">
-            <input type="radio" name="paymentMethod" value="Transferência bancária" />
-            <span>Transferência bancária</span>
-          </label>
+ 
+        <!-- Submit -->
+        <div class="submit-area">
+          <button type="submit" class="btn-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            Confirmar via WhatsApp
+          </button>
+          <p class="purchase-note">Você será redirecionado ao WhatsApp para finalizar e confirmar sua compra com nossa equipe.</p>
         </div>
-
-        <div class="form-group">
-          <label class="form-label" for="customer-name">Nome completo</label>
-          <input id="customer-name" name="customerName" type="text" class="form-input" placeholder="Seu nome" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="customer-phone">Telefone</label>
-          <input id="customer-phone" name="customerPhone" type="tel" class="form-input" placeholder="(99) 99999-9999" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="customer-email">E-mail</label>
-          <input id="customer-email" name="customerEmail" type="email" class="form-input" placeholder="seu@email.com" required />
-        </div>
-
-        <button type="submit" class="btn-primary btn-submit">Efetuar pagamento</button>
-        <p class="purchase-note">Ao clicar em efetuar pagamento, você será redirecionado ao WhatsApp para confirmar sua compra.</p>
+ 
       </form>
     </section>
   </main>
-
+ 
   <footer>
     <div class="footer-inner">
       <div>
@@ -150,58 +224,58 @@
       <span><a href="#">Privacidade</a> · <a href="#">Termos</a></span>
     </div>
   </footer>
-
+ 
   <script>
-    const purchaseForm = document.getElementById('purchase-form');
-    const quantityInput = document.getElementById('quantity');
-    const totalPrice = document.getElementById('total-price');
     const unitPrice = 89.90;
-
-    function formatPrice(value) {
-      return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    let quantity = 1;
+ 
+    const qtyDisplay = document.getElementById('qty-display');
+    const qtyInput   = document.getElementById('quantity');
+    const totalEl    = document.getElementById('total-price');
+ 
+    function formatPrice(v) {
+      return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     }
-
     function updateTotal() {
-      const quantity = Math.max(1, Number(quantityInput.value) || 1);
-      quantityInput.value = quantity;
-      totalPrice.textContent = formatPrice(quantity * unitPrice);
+      qtyDisplay.textContent = quantity;
+      qtyInput.value = quantity;
+      totalEl.textContent = formatPrice(quantity * unitPrice);
     }
-
-    quantityInput.addEventListener('change', updateTotal);
-    quantityInput.addEventListener('input', updateTotal);
-
-    purchaseForm.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const formData = new FormData(purchaseForm);
-      const quantity = Math.max(1, Number(formData.get('quantity') || 1));
-      const paymentMethod = formData.get('paymentMethod');
-      const customerName = formData.get('customerName').trim();
-      const customerPhone = formData.get('customerPhone').trim();
-      const customerEmail = formData.get('customerEmail').trim();
-      const total = formatPrice(quantity * unitPrice);
-
-      const message = `Olá Greenlab, gostaria de confirmar minha compra de ${quantity}x Creme Facial Argila & Alecrim óleo essencial de laranja amarga.\n\nNome: ${customerName}\nTelefone: ${customerPhone}\nE-mail: ${customerEmail}\nMétodo de pagamento: ${paymentMethod}\nTotal: ${total}`;
-      const phone = '5513996491276';
-      const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-      window.location.href = whatsappUrl;
+ 
+    document.getElementById('qty-plus').addEventListener('click', () => {
+      quantity++;
+      updateTotal();
     });
-
+    document.getElementById('qty-minus').addEventListener('click', () => {
+      if (quantity > 1) { quantity--; updateTotal(); }
+    });
+ 
+    document.getElementById('purchase-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const paymentMethod  = document.querySelector('input[name="paymentMethod"]:checked').value;
+      const customerName   = document.getElementById('customer-name').value.trim();
+      const customerPhone  = document.getElementById('customer-phone').value.trim();
+      const customerEmail  = document.getElementById('customer-email').value.trim();
+      const total          = formatPrice(quantity * unitPrice);
+ 
+      const message = `Olá Greenlab! Gostaria de confirmar meu pedido:\n\n🌿 *Produto:* ${quantity}x Creme Facial Argila & Alecrim\n💰 *Total:* ${total}\n💳 *Pagamento:* ${paymentMethod}\n\n👤 *Nome:* ${customerName}\n📱 *Telefone:* ${customerPhone}\n📧 *E-mail:* ${customerEmail}`;
+      window.location.href = `https://wa.me/5513996491276?text=${encodeURIComponent(message)}`;
+    });
+ 
+    // Nav mobile
     const navHamburger = document.querySelector('.nav-hamburger');
     const navLinks = document.querySelector('.nav-links');
     if (navHamburger && navLinks) {
-      navHamburger.addEventListener('click', function() {
+      navHamburger.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         navHamburger.classList.toggle('active');
       });
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('open');
-          navHamburger.classList.remove('active');
-        });
-      });
+      navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navHamburger.classList.remove('active');
+      }));
     }
   </script>
 </body>
 </html>
+
